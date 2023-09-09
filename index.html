@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Event Registration</h1>
+        <form action="" id="regForm">
+            <div class="alert">Submitted Response</div>
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="ieeeMembership">IEEE Membership Number (if applicable)</label>
+                <input type="text" id="ieeeMembership" name="ieeeMembership">
+            </div>
+            <div class="form-group">
+                <label for="eventOptions">Select Event</label>
+                <select id="eventOptions" name="eventOptions" required>
+                    <option value="workshop">Workshop</option>
+                    <option value="conference">Conference</option>
+                    <option value="seminar">Seminar</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comments">Comments (if any)</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="sub-btn">
+            </div>
+        </form>
+    </div>
+</body>
+
+
+<script type="module" src="script.js"></script>
+</script>
+
+</html>
